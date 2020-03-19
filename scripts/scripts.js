@@ -46,14 +46,29 @@
 //     i++;
 // }
 
-let i = 0;
-while ( i<= 80 ) {
-    if ( i < 79) {
-        console.log (`There is only room for ${80-i} more books!`);
-    } else if ( i === 79 ){
-        console.log (`There is only room for ${80-i} more book!`);
+// let i = 0;
+// while ( i<= 80 ) {
+//     if ( i < 79) {
+//         console.log (`There is only room for ${80-i} more books!`);
+//     } else if ( i === 79 ){
+//         console.log (`There is only room for ${80-i} more book!`);
+//     } else {
+//         console.log (`You're out of space on this bookshelf! Long live the books!`);
+//     };
+//     i++;
+// }
+
+// FizBuzz
+let i = 1;
+while ( i <= 100 ) {
+    if ( ( i % 3 !== 0 ) && ( i % 5 !== 0) ) {
+        console.log(i);
+    } else if ( (i % 3 === 0) && (i % 5 !== 0) ) {
+        console.log(`Fizz`);
+    } else if ( (i % 3 !== 0) && (i % 5 === 0) ) {
+        console.log(`Buzz`);
     } else {
-        console.log (`You're out of space on this bookshelf! Long live the books!`);
-    };
+        console.log(`FizzBuzz`);
+    }
     i++;
 }
