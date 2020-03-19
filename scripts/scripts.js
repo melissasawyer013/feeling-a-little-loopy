@@ -40,6 +40,12 @@
 
 // problem #5
 
+// let i = 0;
+// while ( i<= 80 ) {
+//     console.log (`There is only room for ${80-i} more books!`);
+//     i++;
+// }
+
 let i = 0;
 while ( i<= 80 ) {
     if ( i < 79) {
